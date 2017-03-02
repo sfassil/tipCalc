@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LLf-nB-yum">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CP_Prework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cLy-ka-3da">
+                                <rect key="frame" x="22" y="248" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eXD-pm-FAS">
+                                <rect key="frame" x="22" y="193" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="s4g-TX-Mv8">
+                                <rect key="frame" x="0.0" y="224" width="320" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.3148661960952065" blue="0.87103166558616729" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oJH-AW-HNE">
+                                <rect key="frame" x="234" y="248" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMv-Xq-eSj">
+                                <rect key="frame" x="22" y="79" width="27" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="82g-CC-SME">
+                                <rect key="frame" x="148" y="75" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="fsQ-vT-GbA"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ZG2-8m-l2u">
+                                <rect key="frame" x="0.0" y="142" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.3148661961" blue="0.8710316656" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="QrY-V5-NcQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X6t-vY-w99">
+                                <rect key="frame" x="234" y="192" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fLM-6C-nz5" appends="YES" id="nkA-Wn-DDE"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="AeG-oD-iKS">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="pZl-tv-ymY">
+                            <connections>
+                                <segue destination="eT0-Oz-am8" kind="push" id="9fG-PS-2dW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bill" destination="82g-CC-SME" id="eMN-yy-4Pm"/>
+                        <outlet property="tip" destination="X6t-vY-w99" id="d2L-QJ-Vq5"/>
+                        <outlet property="tipPerc" destination="ZG2-8m-l2u" id="FIq-Jh-4jE"/>
+                        <outlet property="total" destination="oJH-AW-HNE" id="VlV-fI-Gco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fLM-6C-nz5">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="4bG-88-9sz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1061" y="356"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="QiA-aV-bLF">
+            <objects>
+                <viewController id="eT0-Oz-am8" customClass="SettingsViewController" customModule="CP_Prework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cSb-qN-zX4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2vk-Ti-j3M">
+                                <rect key="frame" x="0.0" y="142" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.3148661961" blue="0.8710316656" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eWs-Am-zr4">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="UZ1-sd-Ovz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="defaultPerc" destination="2vk-Ti-j3M" id="EZr-XZ-QvE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPN-US-ecw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="356"/>
+        </scene>
+        <!--Salima's Tip Calculator-->
+        <scene sceneID="OoM-vb-sFn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Bs-Mu-VfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController title="Salima's Tip Calculator" automaticallyAdjustsScrollViewInsets="NO" id="LLf-nB-yum" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4G0-aI-Wpn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FDF-1o-nBk" kind="relationship" relationship="rootViewController" id="jpw-wo-Rf7"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="162" y="356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="axf-vC-rOm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FDF-1o-nBk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="WSQ-FI-Xsm">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="7k7-2k-WTS">
+                            <connections>
+                                <segue destination="eT0-Oz-am8" kind="push" id="sUT-bE-IS3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="orN-S2-QEz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ESH-Ka-7yC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3J-AU-tLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="356"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9fG-PS-2dW"/>
+    </inferredMetricsTieBreakers>
+</document>
